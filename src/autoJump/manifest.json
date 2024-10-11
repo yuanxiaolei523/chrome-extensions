@@ -1,0 +1,17 @@
+{
+    "name": "auto jump extensions",
+    "description": "支持掘金、知乎等网站的自动跳转",
+    "version": "1.0",
+    "manifest_version": 3,
+    
+    "content_scripts": [
+        {
+            "js": ["popup.js"],
+            "matches": [
+                "https://link.zhihu.com/*",
+                "https://link.juejin.cn/*"
+            ]   
+        }
+        
+    ]
+}
